@@ -1,0 +1,6 @@
+{
+  "name": "Pistón Parley",
+  "description": "Un panel de orquestación inteligente de agentes de IA y analítica de rendimiento para sistemas industriales y operativos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

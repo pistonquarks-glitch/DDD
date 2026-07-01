@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold-accent: #C5A059;
+  --color-gold-hover: #b48e48;
+  --color-dark-bg: #0A0A0B;
+  --color-dark-surface: #121214;
+  --color-dark-panel: #0C0C0E;
+  --color-border-dark: #2A2A2E;
+}
+
+/* Custom global styles for Elegant Dark theme */
+body {
+  background-color: #0A0A0B;
+  color: #D1D1D1;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Elegant Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0C0C0E;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2E;
+  border-radius: 1px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 2px rgba(197, 160, 89, 0.4));
+  }
+  50% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 8px rgba(197, 160, 89, 0.7));
+  }
+}
+
+.glow-gold {
+  animation: pulse-glow 3s infinite;
+}
+
+
